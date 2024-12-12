@@ -1,0 +1,349 @@
+/* Header container */
+.header {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center align items horizontally */
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Logo Section */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Icons Section */
+.icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.icons i {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.language-selector {
+  font-size: 16px;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+/* Navbar Links */
+.horizontal-nav {
+  display: flex; /* Use flexbox for horizontal layout */
+  justify-content: space-between; /* Space spans evenly */ 
+}
+
+.horizontal-nav span {
+  margin: 0 10px; /* Add 10px margin on both sides of each span */
+  font-size: 16px;
+  color: #333; 
+}
+
+/*  Home Page */
+/* Styling for the title */
+.title {
+  font-family: 'Simplon Norm';
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  background-color: #252020;
+  width: 666px;
+  height: 72px;
+  margin-top: 292px; /* Positioning */
+  margin-left: 388px; /* Positioning */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1; /* Fully visible */
+}
+
+/* Styling for the paragraph */
+.description {
+  font-family: 'Simplon Norm', sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 388px; /* Align with the title */
+  margin-right: 388px; /* Align with the title */
+}
+
+
+/*  Footer */
+
+/* footer.css */
+
+footer {
+  background-color: hsl(0, 0%, 0%); /* Black background */
+  color: white; /* White text color */
+  padding-top: 3rem; /* Padding on the top */
+  padding-bottom: 3rem; /* Padding on the bottom */
+}
+
+footer .container {
+  max-width: 90%; /* Limit the container's width */
+  margin: 0 auto; /* Center the container */
+  padding-left: 1rem; /* Horizontal padding */
+  padding-right: 1rem; /* Horizontal padding */
+}
+
+footer .grid {
+  display: grid;
+  grid-template-columns: 1fr; /* 1 column by default */
+  gap: 2rem; /* Space between grid items */
+}
+
+footer .grid.md\:grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr); /* 3 columns for medium screens */
+}
+
+footer .footer-section {
+  margin-bottom: 1rem; /* Space between sections */
+}
+
+footer h2 {
+  font-size: 1.25rem; /* Larger font size for headings */
+  font-weight: bold; /* Bold text for headings */
+  margin-bottom: 1rem; /* Space below headings */
+}
+
+footer .subscribe-button {
+  padding: 0.5rem 1.5rem; /* Button padding */
+  border: 1px solid #fff; /* White border */
+  border-radius: 0.25rem; /* Rounded corners */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+footer .subscribe-button:hover {
+  background-color: #fff; /* White background on hover */
+  color: #000; /* Black text on hover */
+}
+
+footer .currency-section span {
+  font-size: 1.125rem; /* Larger font size for currency */
+}
+
+footer .footer-bottom {
+  margin-top: 3rem; /* Margin for bottom section */
+  padding-top: 2rem; /* Padding on the top */
+  border-top: 1px solid rgba(255, 255, 255, 0.2); /* Light top border */
+}
+
+footer .footer-bottom p {
+  text-align: center; /* Center text */
+  font-size: 0.875rem; /* Smaller font size */
+}
+
+
+/* Sidebar  */
+/* Sidebar.css */
+
+.sidebar {
+  width: 250px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.filter-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-item {
+  margin-bottom: 15px;
+}
+
+.filter-item h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.filter-item p {
+  font-size: 14px;
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .filter-item {
+    margin-bottom: 10px;
+  }
+}
+
+
+/* */
+/* Sidebar.css */
+
+/* Card container */
+.sidebar-card {
+  width: 300px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Card title */
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Filter list */
+.filter-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Filter item */
+.filter-item {
+  margin-bottom: 15px;
+}
+
+/* Dropdown header */
+.dropdown-header {
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  color: #555;
+}
+
+/* Arrow */
+.arrow {
+  font-size: 12px;
+}
+
+/* Dropdown content */
+.dropdown-content {
+  list-style-type: none;
+  padding: 5px 10px;
+  margin: 10px 0 0 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-content li {
+  margin: 5px 0;
+  cursor: pointer;
+  font-size: 14px;
+  color: #777;
+}
+
+.dropdown-content li:hover {
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sidebar-card {
+    width: 100%;
+    box-shadow: none;
+  }
+}
+
+
+/****************/
+/* Homepage.css */
+
+.homepage-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #777;
+}
+
+/* Sidebar */
+.sidebar-card {
+  width: 300px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Content */
+.content {
+  flex: 1; /* Allows the content to take remaining space */
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .homepage-container {
+    flex-direction: column; /* Stack elements vertically */
+  }
+
+  .sidebar-card,
+  .content {
+    width: 100%; /* Make both take full width */
+  }
+}
+
